@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The best gym in the">
+  <title>Fitness Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="header-container">
+    <div class="header-left">
+      <img src="logo/logo.png" alt="Fitness Zone logo" class="logo">
+    </div>
+    <div class="header-right">
+      <button class="payment"><a href="login.php">Payment</a></button>
+      <button class="signup"><a href="login.php">Sign Up</a></button>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="about.php#gym">GYM</a></li>
+      <li><li><a href="about.php#zumba">Zumba</li>
+      <li><li><a href="about.php#personal-training">Personal Training</li>
+      <li><li><a href="about.php#group-class">Group class</li>
+      <li><li><a href="about.php#healthy-cafe">Healthy Cafe</li>
+      <li><li><a href="about.php#meal-plan">Meal Plane</li>
+      <li><li><a href="about.php#workout-plan">Workout Plane</li>
+      <li><li><a href="about.php#cardio">Cardio</li>
+    </ul>
+  </nav>
+</header>
+
+<section class="slideshow-section">
+  <div class="text-content">
+    <h2 id="slide-title">Information about fitness programs, trainers, and facilities.</h2>
+    <p id="slide-description">
+      Want to get in shape by this summer? Try our best packages according to your schedule.
+    </p>
+    <button class="try-now-btn">
+      <a href="appointment.php">Book An Appointment</a>
+    </button>
+  </div>
+  <div class="slideshow">
+    <button class="slide-btn left-btn" onclick="prevSlide()">&#10094;</button>
+    <img id="slide-image" src="image/slide1.jpg" alt="Fitness Slide">
+    <button class="slide-btn right-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+</section>
+
+<section class="featured-section">
+ 
+  <div class="classes-training">
+    <h2>Our Classes & Training</h2>
+    <div class="classes-list">
+      <div class="class-item">
+        <img src="image/yoga.jpg" alt="Yoga">
+        <h3>Yoga</h3>
+        <p>Relax and strengthen your body with our yoga sessions.</p>
+      </div>
+      <div class="class-item">
+        <img src="image/zumba.jpg" alt="Zumba">
+        <h3>Zumba</h3>
+        <p>Dance your way to fitness with high-energy Zumba sessions.</p>
+      </div>
+      <div class="class-item">
+        <img src="image/pt.jpg" alt="Personal Training">
+        <h3>Personal Training</h3>
+        <p>Get one-on-one guidance from our expert trainers.</p>
+      </div>
+      <div class="class-item">
+        <img src="image/gs.jpg" alt="Group Sessions">
+        <h3>Group Sessions</h3>
+        <p>Achieve your goals in a motivating group environment.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="details-section">
+    <h2>Why Choose Us?</h2>
+    <p>
+      At FitnessZone, we focus on your fitness journey with personalized guidance,
+      cutting-edge equipment, and a supportive community. Transform your body 
+      and mind with our expert coaches and specialized programs.
+    </p>
+    <button class="explore-btn">
+      <a href="about.php">Explore More</a>
+    </button>
+  </div>
+
+  <section class="coaches-section">
+    <h2>Meet Our Expert Coaches</h2>
+    <div class="coaches-carousel">
+      <div class="coach-item">
+        <img src="image/coach1.jpg" alt="Coach John" class="coach-img">
+        <h3>John Smith</h3>
+        <p>Strength & Conditioning Specialist</p>
+      </div>
+      <div class="coach-item">
+        <img src="image/coach3.jpg" alt="Coach Sarah" class="coach-img">
+        <h3>Sarah Lee</h3>
+        <p>Certified Yoga Instructor</p>
+      </div>
+      <div class="coach-item">
+        <img src="image/coach2.jpg" alt="Coach Mike" class="coach-img">
+        <h3>Mike Johnson</h3>
+        <p>Personal Training Expert</p>
+      </div>
+      <div class="coach-item">
+        <img src="image/coach5.jpg" alt="Coach Emma" class="coach-img">
+        <h3>Luke Davis</h3>
+        <p>HIIT Trainer</p>
+      </div>
+       
+  </section>
+  <button id="explore-more-btn">
+    <a href="coaches.php">Explore More</a>
+  </button>
+  
+
+<section class="more-coaches-section" id="more-coaches-section">
+  <div id="more-coaches-list">
+  </div>
+</section>
+
+<section class="benefits-section">
+  <h2>BENEFITS OF REGULAR EXERCISE</h2>
+  <p>
+      Exercise is defined as any physical activity that makes your muscles work and requires your body to burn calories. 
+      Maintaining an active lifestyle offers a multitude of health benefits, positively impacting your physical and 
+      mental well-being. In fact, it has the potential to extend your lifespan.
+  </p>
+  <div class="benefits-container">
+      <div class="benefit-item">
+          <img src="icon/dumbel3.jpg" alt="Improved Physical Health Icon">
+          <h3>Improved Physical Health</h3>
+          <p>
+              Regular exercise can lead to enhanced cardiovascular health, stronger muscles and bones, 
+              improved flexibility, and increased endurance. It also reduces the risk of chronic diseases 
+              such as heart disease, diabetes, and certain types of cancer.
+          </p>
+      </div>
+      <div class="benefit-item">
+          <img src="icon/Smile.png" alt="Enhanced Mental Health Icon">
+          <h3>Enhanced Mental Health</h3>
+          <p>
+              Exercise releases endorphins, often referred to as the 'feel-good' hormones, which can elevate 
+              mood and reduce feelings of stress, anxiety, and depression. It can also improve sleep quality 
+              and help manage conditions such as insomnia.
+          </p>
+      </div>
+      <div class="benefit-item">
+          <img src="icon/thunder.png" alt="Increased Energy Levels Icon">
+          <h3>Increased Energy Levels</h3>
+          <p>
+              Regular physical activity improves blood circulation and oxygen delivery to the body, resulting 
+              in increased energy levels and reduced fatigue.
+          </p>
+      </div>
+  </div>
+</section>
+
+<section class="contact-bmi-section">
+  <div class="contact-container">
+      <div class="gym-info">
+          <img src="logo/logo.png" alt="Gym Logo" class="gym-logo">
+          <p><strong>Fitness Zone</strong></p>
+          <p>Head Office</p>
+          <p>123 Fitness Lane, Kurunegala</p>
+          <p>Contact: 0112 626 100</p>
+            <button class="register-btn">
+              <a href="register.php">Register Now</a>
+            </button>
+      </div>
+      <form class="contact-form">
+          <h3>Questions? Contact Us Below</h3>
+          <div class="form-row">
+              <input type="text" name="first_name" placeholder="First Name" required>
+              <input type="text" name="last_name" placeholder="Last Name" required>
+          </div>
+          <div class="form-row">
+              <input type="email" name="email" placeholder="Email *" required>
+              <input type="text" name="subject" placeholder="Subject">
+          </div>
+          <textarea name="message" rows="4" placeholder="Message" required></textarea>
+          <button type="submit" class="submit-btn">Submit</button>
+      </form>
+  </div>
+  
+  <div class="bmi-calculator-container">
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-7d772d10-e027-48b0-a00f-b5aecfc8f95f" data-elfsight-app-lazy></div>
+  </div>
+  <div class="image-section">
+      <img src="image/pt1.jpg" alt="Fitness Trainers"><img src="image/pt2.jpg" alt="Fitness Trainers">
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank" title="Instagram">
+            <img src="icon/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com" target="_blank" title="Facebook">
+            <img src="icon/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.whatsapp.com" target="_blank" title="WhatsApp">
+            <img src="icon/whatsapp.png" alt="WhatsApp" />
+        </a>
+    </div>
+    
+  
+    <div class="contact-details">
+      <p>📍 123 Fitness Lane, Kurunegala</p>
+      <p>📞 +94 76 001 0844 | ✉️ contact@fitnesszone.com</p>
+  </div>
+
+
+  <div class="copyright">
+      &copy; 2024 FitnessZone Gym. All rights reserved.
+  </div>
+</div>
+
+</footer>
+
+
+
+
+  <form action="index.php" method="POST">
+    
+  </form>
+  <div id="output"></div>
+  <script src="script.js"></script>
+</body>
+</html>
